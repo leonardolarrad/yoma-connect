@@ -1,0 +1,65 @@
+# --- Meson / Build Systems ---
+# Ignore the build directory
+/build/
+/builddir/
+
+# Ignore unzipped subprojects but keep .wrap configuration files
+/subprojects/*
+!/subprojects/*.wrap
+!/subprojects/packagefiles
+
+# --- C/C++ Compiled Files ---
+# Object files
+*.o
+*.obj
+*.gch
+*.pch
+
+# Libraries and Executables
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Linker/compiler output and debug files
+*.pdb
+*.ilk
+*.exp
+*.map
+*.d
+
+# --- IDEs and Editors ---
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.filters
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+*.xcworkspace/
+
+# Temporary / Backup files
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
